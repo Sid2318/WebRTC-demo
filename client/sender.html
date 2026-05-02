@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WebRTC - Sender (Camera)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #1a1a1a;
+      }
+      .container {
+        text-align: center;
+        background-color: #2a2a2a;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+      h2 {
+        color: #4caf50;
+        margin-top: 0;
+      }
+      video {
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        background-color: #000;
+        border-radius: 4px;
+        border: 2px solid #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2> Sender (Camera)</h2>
+      <video id="localVideo" autoplay muted playsinline></video>
+      <p style="color: #888; font-size: 12px; margin-top: 10px">
+        Your camera feed
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      start(true); // sender
+    </script>
+  </body>
+</html>
